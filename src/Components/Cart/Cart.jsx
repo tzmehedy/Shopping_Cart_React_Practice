@@ -1,9 +1,12 @@
 
+const Cart = ({cart}) => {
 
-const Cart = () => {
+    const {title,price} = cart
+    
     return (
-        <div>
-            <h1>hello from cart</h1>
+        <div className="flex justify-between">
+           <h1>{title}</h1>
+           <p>{price}</p>
         </div>
     );
 };
